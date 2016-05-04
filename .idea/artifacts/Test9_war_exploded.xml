@@ -9,8 +9,11 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Struts 2-2.3.20.1" />
           <element id="library" level="project" name="mysql-connector-java-5.0.4-bin" />
+          <element id="library" level="project" name="required" />
+          <element id="library" level="project" name="c3p0" />
+          <element id="library" level="project" name="hibernate-entitymanager-4.3.6.Final" />
+          <element id="library" level="project" name="hibernate-jpamodelgen-4.3.6.Final" />
           <element id="library" level="project" name="servlet-api" />
-          <element id="library" level="project" name="antlr-2.7.7" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Test9/web/Web" />

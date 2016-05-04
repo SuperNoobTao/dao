@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hibernate-jpamodelgen-4.3.6.Final">
+    <CLASSES>
+      <root url="jar://E:/jar/Hibernatelib/jpa-metamodel-generator/hibernate-jpamodelgen-4.3.6.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

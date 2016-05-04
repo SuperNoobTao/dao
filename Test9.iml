@@ -44,6 +44,9 @@
     <orderEntry type="library" name="Struts 2-2.3.20.1" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.0.4-bin" level="project" />
     <orderEntry type="library" name="servlet-api" level="project" />
-    <orderEntry type="library" name="antlr-2.7.7" level="project" />
+    <orderEntry type="library" name="required" level="project" />
+    <orderEntry type="library" name="c3p0" level="project" />
+    <orderEntry type="library" name="hibernate-entitymanager-4.3.6.Final" level="project" />
+    <orderEntry type="library" name="hibernate-jpamodelgen-4.3.6.Final" level="project" />
   </component>
 </module>
