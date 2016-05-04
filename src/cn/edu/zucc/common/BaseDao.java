@@ -62,8 +62,10 @@ public abstract class BaseDao<T> {
 
     public int delete(T t) {
         Session session = HibernateUtil.getSession();
+        Transaction tx = session.beginTransaction();
         try {
             session.delete(t);
+            tx.commit();
             return 1;
         } catch (HibernateException e) {
             e.printStackTrace();
