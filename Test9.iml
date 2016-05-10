@@ -48,5 +48,8 @@
     <orderEntry type="library" name="c3p0" level="project" />
     <orderEntry type="library" name="hibernate-entitymanager-4.3.6.Final" level="project" />
     <orderEntry type="library" name="hibernate-jpamodelgen-4.3.6.Final" level="project" />
+    <orderEntry type="library" name="c3p0-0.9.2.1" level="project" />
+    <orderEntry type="library" name="hibernate-c3p0-4.3.6.Final" level="project" />
+    <orderEntry type="library" name="mchange-commons-java-0.2.3.4" level="project" />
   </component>
 </module>

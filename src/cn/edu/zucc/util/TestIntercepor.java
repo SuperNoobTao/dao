@@ -14,9 +14,11 @@ public class TestIntercepor extends AbstractInterceptor {
         System.out.println("test begin");
 
         try{
+
             return arg0.invoke();
         }
         finally{
+
             System.out.println("test end");
         }
     }

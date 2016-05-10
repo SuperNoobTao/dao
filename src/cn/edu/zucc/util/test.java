@@ -35,7 +35,7 @@ public class test {
  *在添加账号时判断数据库中是否有此账号，1为没有，-1为有
  */
         TbUserEntity user = new TbUserEntity();
-        user.setUsername("1121211112");
+        user.setUsername("13");
         user.setPwd("1");
         int i =userDao.add(user);
         System.out.print(i);

@@ -16,11 +16,15 @@ import java.util.List;
 public abstract class BaseDao<T> {
     private Class<T> entityClass;
 
+
+
     @SuppressWarnings("unchecked")
     public BaseDao() {
+
         Type type=getClass().getGenericSuperclass();
         entityClass=(Class<T>) ((ParameterizedType)type).getActualTypeArguments()[0];
     }
+
 
     @SuppressWarnings("unchecked")
     public List<T> getList() {
@@ -47,10 +51,8 @@ public abstract class BaseDao<T> {
 
     public int add(T t) {
         Session session = HibernateUtil.getSession();
-        Transaction tx = session.beginTransaction();
         try {
             session.save(t);
-            tx.commit();
             return 1;
         } catch (HibernateException e) {
             e.printStackTrace();

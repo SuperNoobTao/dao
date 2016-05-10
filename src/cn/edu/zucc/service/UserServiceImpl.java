@@ -3,6 +3,9 @@ package cn.edu.zucc.service;
 import cn.edu.zucc.dao.UserDao;
 import cn.edu.zucc.dao.UserDaoImpl;
 import cn.edu.zucc.model.TbUserEntity;
+import cn.edu.zucc.util.HibernateUtil;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 /**
  * Created by shentao on 2016/5/3.
@@ -12,12 +15,15 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public int add(TbUserEntity user) {
+        Session session = HibernateUtil.getSession();
+        Transaction tx = session.beginTransaction();
+        int i=-1;
         if(userDao.checkAcount(user.getUsername()) == false){
-
-        return userDao.add(user);
+            i =  userDao.add(user);
+            tx.commit();
        }
-        return -1;
 
+        return i;
     }
 
     @Override
